@@ -5,8 +5,9 @@ import dotenv from "dotenv";
 import sessionRegRoute from "./Routes/sessionReg";
 dotenv.config();
 
-const URL = process.env.MONGO || "";
-const ORIGIN = process.env.ORIGIN || "";
+const URL = process.env.MONGO || "mongodb://localhost:27017/";
+const ORIGIN = process.env.ORIGIN || "http://localhost:3000";
+const PORT = process.env.PORT || 4000;
 
 const app: Express = express();
 app.use(express.json());
@@ -29,7 +30,7 @@ app.use(cors(
 // Api is running
 
 app.get("/", (req: Request, res: Response) => {
-    res.send("Api is running");
+    res.send("MADHACK API is running");
 });
 
 app.use("/api/register", sessionRegRoute);
@@ -47,7 +48,7 @@ mongoose.connection.on("disconnected", () => {
   console.log("mongoDB disconnected!")
 })
 
-app.listen(4011, () => {
+app.listen(PORT, () => {
     connect();
-    console.log("Server running on port 4011");
+    console.log("Server running on port " + PORT);
 });

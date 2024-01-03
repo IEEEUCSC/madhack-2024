@@ -55,49 +55,25 @@ const Timeline: React.FC = () => {
     {
       date: "Jan 5th",
       event: "Awareness Session",
-      description: "Lorem ipsum dolor sit amet",
+      description: "Mobile App Designing Session",
       state: "Virtual"
-    },
-    {
-      date: "Jan 10th",
-      event: "App Designing",
-      description: "Lorem ipsum dolor sit amet",
-      state: "Virtual"
-    },
-    {
-      date: "Jan 20th",
-      event: "Flutter Session - Basics",
-      description: "Lorem ipsum dolor sit amet",
-      state: "Onsite"
     },
     {
       date: "Jan 21st",
-      event: "Flutter Session - Advanced",
-      description: "Lorem ipsum dolor sit amet",
-      state: "Onsite"
+      event: "Flutter Session - Basics",
+      description: "Flutter Session - Advance & Open Initial Round",
+      state: "Virtual"
     },
     {
       date: "Jan 28th",
-      event: "Initial round submission deadline",
-      description: "Lorem ipsum dolor sit amet",
-      state: ""
-    },
-    {
-      date: "Feb 1st",
-      event: "Announcing of Finalists",
-      description: "Lorem ipsum dolor sit amet",
-      state: ""
+      event: "Close Initial Round",
+      description: "Announcement of Finalists",
+      state: "Onsite"
     },
     {
       date: "Feb 3rd",
       event: "Final Hackathon",
-      description: "Lorem ipsum dolor sit amet",
-      state: "Onsite"
-    },
-    {
-      date: "Feb 4th",
-      event: "Award Ceremony",
-      description: "Lorem ipsum dolor sit amet",
+      description: "Final Hackathon & Award Ceremony",
       state: "Onsite"
     },
   ]

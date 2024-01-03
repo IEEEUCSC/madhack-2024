@@ -26,6 +26,7 @@ const App = () => {
             <NavBar/>
             <Routes>
                 <Route path="/register" Component={Registration}/>
+              
                 <Route path="/" element={
                     <div>
                         <Hero/>

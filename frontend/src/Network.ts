@@ -7,6 +7,7 @@ export class Network {
         // return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
         // get the url from the .env file
         return this.sendRequest("https://whale-app-h5o2s.ondigitalocean.app"+ '/api/register', 'POST', JSON.stringify(data));
+
     }
 
     private async sendRequest(url: string, method: string, body: string | null): Promise<any> {

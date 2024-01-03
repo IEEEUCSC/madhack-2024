@@ -1,6 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+// sweetalert2
+import Swal from 'sweetalert2';
+
 import './Registration.scss';
 import {Network, ResponseModel} from "../../Network";
 
@@ -9,7 +12,19 @@ export default function Registration() {
   const { register, handleSubmit, formState: { errors } , reset} = useForm();
   const onSubmit = async (data:any) => {
     let response: ResponseModel = await Network.shared.register(data)
-    alert(response.message)
+    // alert(response.message)
+    // use site styles
+    Swal.fire({
+      title: response.message,
+      icon: response.success ? 'success' : 'error',
+      confirmButtonText: 'Ok',
+      background: '#232631',
+      color: '#fff',
+      // add link to whatsapp group with whatsapp icon
+      footer: '<a href="https://chat.whatsapp.com/J2NvQ7k8bJwJ8K4tJ9b1eY" target="_blank"> Join our whatsapp group <br> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>'
+    })
+
+    
     if (response.success) {
       reset()
     }

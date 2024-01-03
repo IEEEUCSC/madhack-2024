@@ -62,6 +62,9 @@ dependencies:
   sass:
     specifier: ^1.69.5
     version: 1.69.5
+  sweetalert2:
+    specifier: ^11.10.2
+    version: 11.10.2
   typescript:
     specifier: ^4.9.5
     version: 4.9.5
@@ -9712,6 +9715,10 @@ packages:
       csso: 4.2.0
       picocolors: 1.0.0
       stable: 0.1.8
+    dev: false
+
+  /sweetalert2@11.10.2:
+    resolution: {integrity: sha512-BYlIxGw6OF9Rw2z1wlnh1U+fvHHkvtg4BGyimV9nZxQRGvCBfx9uonxgwuYpJuYqCtM+2W1KOm8iMIEb/2v7Hg==}
     dev: false
 
   /symbol-tree@3.2.4:

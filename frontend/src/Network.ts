@@ -4,7 +4,9 @@ export class Network {
     constructor() {}
 
     public register(data: any): Promise<ResponseModel> {
-        return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
+        // return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
+        // get the url from the .env file
+        return this.sendRequest(process.env.REACT_APP_BACKEND_URL + '/api/register', 'POST', JSON.stringify(data));
     }
 
     private async sendRequest(url: string, method: string, body: string | null): Promise<any> {

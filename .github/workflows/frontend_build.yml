@@ -23,7 +23,7 @@ jobs:
 
     - name: Install frontend dependencies with pnpm
       env:
-        REACT_APP_BACKEND_URL: https://backend-heroku.herokuapp.com
+        REACT_APP_BACKEND_URL: https://whale-app-h5o2s.ondigitalocean.app
       run: |
         cd frontend
         pnpm install

@@ -14,7 +14,10 @@ export class Network {
             method: method,
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE',
+               
+
             },
             body: body
         });

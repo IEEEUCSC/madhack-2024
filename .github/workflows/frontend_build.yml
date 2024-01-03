@@ -22,6 +22,8 @@ jobs:
       run: npm install -g pnpm
 
     - name: Install frontend dependencies with pnpm
+      env:
+        REACT_APP_BACKEND_URL: https://backend-heroku.herokuapp.com
       run: |
         cd frontend
         pnpm install

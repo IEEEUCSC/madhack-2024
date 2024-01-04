@@ -8,7 +8,7 @@ services:
       dockerfile: pnpm.Dockerfile
     restart: always
     ports:
-      - 4011:4011
+      - 4000:4000
     volumes:
       - ./src:/app/src
       - ./tsconfig.json:/app/tsconfig.json

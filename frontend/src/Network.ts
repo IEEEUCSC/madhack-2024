@@ -6,7 +6,7 @@ export class Network {
     public register(data: any): Promise<ResponseModel> {
         // return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
         // get the url from the .env file
-        return this.sendRequest("https://whale-app-h5o2s.ondigitalocean.app"+ '/api/register', 'POST', JSON.stringify(data));
+        return this.sendRequest( process.env.REACT_APP_BACKEND_URL  + '/api/register', 'POST', JSON.stringify(data));
 
     }
 

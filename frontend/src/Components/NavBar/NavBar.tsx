@@ -45,7 +45,8 @@ function NavBar() {
                                   <li><a href="/#timeline">timeline</a></li>
                                   <li><a href="/#prizes">prizes</a></li>
                                   <li><a href="/#faq">faq</a></li>
-                                  <li><a className="cta" href="/register">Register Now</a></li>
+                                  {/* <li><a className="cta" href="/register">Register Now</a></li> */}
+                                    <li><Link className="cta" to="/register">Register Now</Link></li>
                               </ul>
                           </nav>
                       </div>

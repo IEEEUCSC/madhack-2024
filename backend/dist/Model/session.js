@@ -1,7 +1,10 @@
-import {Document, Schema , model} from 'mongoose'
-import mongoose from "mongoose";
-
-const sessionSchema = new mongoose.Schema({
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const mongoose_1 = __importDefault(require("mongoose"));
+const sessionSchema = new mongoose_1.default.Schema({
     email: {
         type: String,
         required: true
@@ -10,20 +13,19 @@ const sessionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    number:{
+    number: {
         type: String,
         required: true
     },
-    university:{
+    university: {
         type: String,
         required: true
     },
-    year:{
+    year: {
         type: String,
         required: true
     }
 });
-
 // interface ISession extends Document {
 //     email: string;
 //     fullName: string;
@@ -31,5 +33,4 @@ const sessionSchema = new mongoose.Schema({
 //     university: string;
 //     year: string;
 // }
-
-export default mongoose.model('Session', sessionSchema);
+exports.default = mongoose_1.default.model('Session', sessionSchema);

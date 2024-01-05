@@ -25,17 +25,18 @@ const App = () => {
         <div className="app-container">
             <NavBar/>
             <Routes>
-                <Route path="/register" Component={Registration}/>
-                <Route path="/" element={
-                    <div>
-                        <Hero/>
-                        <Intro/>
-                        <Timeline/>
-                        <Prizes/>
-                        <Faq/>
-                    </div>
-                }/>
-            </Routes>
+    <Route path="/register" element={<Registration/>} />
+
+    <Route path="/*" element={
+        <div>
+            <Hero/>
+            <Intro/>
+            <Timeline/>
+            <Prizes/>
+            <Faq/>
+        </div>
+    }/>
+</Routes>
             <Footer/>
         </div>
     );

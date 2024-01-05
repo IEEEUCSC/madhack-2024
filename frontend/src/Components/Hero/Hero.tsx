@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './Hero.scss'
-
+import { Link } from 'react-router-dom';
 
 
 function Hero() {
@@ -49,12 +49,13 @@ function Hero() {
               <div className="row align-items-center">
                   <div className="col-md-10">
                       <span className="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">By IEEE Student Branch of UCSC</span>
-                      <h1 className="d-block mb-4" data-aos="fade-up" data-aos-delay="200">MADHACK 2023</h1>
+                      <h1 className="d-block mb-4" data-aos="fade-up" data-aos-delay="200">MADHACK 3.0</h1>
                       <div className="sentence-container">
                           <span className="sentence" data-aos="fade-up" data-aos-delay="300" style={{display: 'table'}}>{sentences[currentIndex].substring(0, offset)}</span>
                       </div>
                       <br className={"d-block"}></br>
-                      <a href="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a>
+                      {/* <a href="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a> */}
+                        <Link to="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></Link>
                   </div>
               </div>
           </div>

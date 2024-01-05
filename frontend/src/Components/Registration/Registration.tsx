@@ -1,6 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+// sweetalert2
+import Swal from 'sweetalert2';
+
 import './Registration.scss';
 import {Network, ResponseModel} from "../../Network";
 
@@ -9,17 +12,34 @@ export default function Registration() {
   const { register, handleSubmit, formState: { errors } , reset} = useForm();
   const onSubmit = async (data:any) => {
     let response: ResponseModel = await Network.shared.register(data)
-    alert(response.message)
+    // alert(response.message)
+    // use site styles
+    Swal.fire({
+      title: response.message,
+      icon: response.success ? 'success' : 'error',
+      confirmButtonText: 'Ok',
+      background: '#232631',
+      color: '#fff',
+      // add link to whatsapp group with whatsapp icon
+      footer: '<a href="https://chat.whatsapp.com/LJ7CwK4eiRd3jkLntBfoj0" target="_blank"> Join our whatsapp group <br> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>'
+    })
+
+    
     if (response.success) {
       reset()
     }
   }
   
   return (
-      <div className="site-section local-bootstrap reg-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 aos-init aos-animate" data-aos="fade-up">
+    <div className="site-section local-bootstrap reg-section">
+
+    <div className="container">
+    <h1 className='py-2'> Register for the Awareness Session </h1>
+
+
+
+      <div className="row">
+        <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row form-group">
                   <div className="col-md-12">

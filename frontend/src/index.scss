@@ -6,6 +6,7 @@
 
 html {
   background: black;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -105,6 +106,10 @@ code {
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+  }
+
+  .site-section {
+    padding: 3em 0;
   }
 
   @media (min-width: 768px) {

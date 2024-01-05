@@ -1,19 +1,15 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 import './NavBar.scss'
-import {Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 
 function NavBar() {
 
-    function onMenuClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-        e.preventDefault()
-        if (document.body.classList.contains('offcanvas-menu')) {
-            document.body.classList.remove('offcanvas-menu')
-        } else {
-            document.body.classList.add('offcanvas-menu')
+    function hideNavBar() {
+        if (document.body.classList.contains("offcanvas-menu")) {
+            document.body.classList.remove("offcanvas-menu");
         }
     }
-
   return (
       <div className="nav-bar local-bootstrap">
           <div className="site-mobile-menu">
@@ -23,7 +19,14 @@ function NavBar() {
                   </div>
               </div>
               <div className="site-mobile-menu-body">
-
+                  <ul className={"site-nav-wrap"}>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#">home</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#about">about</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#timeline">timeline</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">prizes</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#faq">faq</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
+                  </ul>
               </div>
           </div>
           <header className="site-navbar py-3 site-container" role="banner">
@@ -43,7 +46,7 @@ function NavBar() {
                                   <li><a href="/#prizes">prizes</a></li>
                                   <li><a href="/#faq">faq</a></li>
                                   {/* <li><a className="cta" href="/register">Register Now</a></li> */}
-                                    <li><Link className="cta" to="/register">Register Now</Link></li>
+                                    <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
                               </ul>
                           </nav>
                       </div>

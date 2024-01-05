@@ -10,27 +10,29 @@ const data = {
     // title: "FAQ (How it works)",
     rows: [
         {
-            title: "Lorem ipsum dolor sit amet,",
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-              Fusce sed commodo purus, at tempus turpis.`,
+            title: "What is MadHack 3.0?",
+            content: `MadHack 3.0 is a coding competition where enthusiasts come together to showcase their skills in mobile app development. It's a platform to learn, collaborate, and compete in creating innovative solutions for real-world challenges.`,
         },
         {
-            title: "Nunc maximus, magna at ultricies elementum",
+            title: "Who can participate in MadHack 3.0?",
             content:
-                "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+                "MadHack 3.0 is open to all undergraduate students! Whether you're a seasoned developer or just starting, we welcome participants of all skill levels and backgrounds.",
         },
         {
-            title: "Curabitur laoreet, mauris vel blandit fringilla",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+            title: "How can I register for MadHack 3.0?",
+            content: `To register, visit our website and navigate to the registration page. Fill in the required details for yourself and your team members (if applicable) to secure your spot.`,
         },
         {
-            title: "What is the package version",
-            content: <p>current version is 1.2.1</p>,
+            title: "Do I need a team to participate?",
+            content:"Yes, for the Initial Round and the Final Hackathon, participants are encouraged to form teams of four members each.",
+        },
+        {
+            title: "What if I'm a beginner in coding? Can I still participate?",
+            content:"Absolutely! MadHack 3.0 is designed for participants of all skill levels. It's a great opportunity for beginners to learn and for experienced coders to showcase their expertise.",
+        },
+        {
+            title: "Is the usage of Flutter mandatory for MadHack 3.0 projects?",
+            content:"No, it's not mandatory to use Flutter for your projects in MadHack 3.0. While we have Flutter sessions to help you, you are free to use other frameworks or technologies that best suit your project requirements.",
         },
     ],
 };

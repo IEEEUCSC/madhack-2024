@@ -26,12 +26,7 @@ const App = () => {
             <NavBar/>
             <Routes>
                 <Route path="/register" Component={Registration}/>
-                <Route path="/about" Component={Intro}/>
-                <Route path="/timeline" Component={Timeline}/>
-                <Route path="/prizes" Component={Prizes}/>
-                <Route path="/Faq" Component={Faq}/>
-                {/* <Route path="/register" Component={Registration}/>
-                <Route path="/register" Component={Registration}/> */}
+              
                 <Route path="/" element={
                     <div>
                         <Hero/>

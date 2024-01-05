@@ -1,10 +1,15 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 import './NavBar.scss'
-import {Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 
 function NavBar() {
 
+    function hideNavBar() {
+        if (document.body.classList.contains("offcanvas-menu")) {
+            document.body.classList.remove("offcanvas-menu");
+        }
+    }
   return (
       <div className="nav-bar local-bootstrap">
           <div className="site-mobile-menu">
@@ -15,12 +20,12 @@ function NavBar() {
               </div>
               <div className="site-mobile-menu-body">
                   <ul className={"site-nav-wrap"}>
-                      <li><a href="/#">home</a></li>
-                      <li><a href="/#about">about</a></li>
-                      <li><a href="/#timeline">timeline</a></li>
-                      <li><a href="/#prizes">prizes</a></li>
-                      <li><a href="/#faq">faq</a></li>
-                      <li><a className="cta" href="/register">Register Now</a></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#">home</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#about">about</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#timeline">timeline</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">prizes</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#faq">faq</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
                   </ul>
               </div>
           </div>

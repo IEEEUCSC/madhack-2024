@@ -5,15 +5,6 @@ import {Link} from "react-router-dom";
 
 function NavBar() {
 
-    function onMenuClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-        e.preventDefault()
-        if (document.body.classList.contains('offcanvas-menu')) {
-            document.body.classList.remove('offcanvas-menu')
-        } else {
-            document.body.classList.add('offcanvas-menu')
-        }
-    }
-
   return (
       <div className="nav-bar local-bootstrap">
           <div className="site-mobile-menu">
@@ -23,7 +14,14 @@ function NavBar() {
                   </div>
               </div>
               <div className="site-mobile-menu-body">
-
+                  <ul className={"site-nav-wrap"}>
+                      <li><a href="/#">home</a></li>
+                      <li><a href="/#about">about</a></li>
+                      <li><a href="/#timeline">timeline</a></li>
+                      <li><a href="/#prizes">prizes</a></li>
+                      <li><a href="/#faq">faq</a></li>
+                      <li><a className="cta" href="/register">Register Now</a></li>
+                  </ul>
               </div>
           </div>
           <header className="site-navbar py-3 site-container" role="banner">

@@ -25,8 +25,8 @@ export default function Intro() {
                     <div className="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
                         <img src={presents} alt="Image" className="img-fluid"/>
                     </div>
-                    <div className="col-lg-6 ml-auto">
-                        <h2 className="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">What is MADHACK</h2>
+                    <div className="col-lg-6  ml-auto">
+                        <h2 className="text-white mb-4 name pl-lg-5" data-aos="fade-right" data-aos-delay="200">What is MADHACK</h2>
                         <div className="bio pl-lg-5">
                             <p className="mb-4" data-aos="fade-right" data-aos-delay="400">
                                 Introducing Sri Lanka’s first Mobile Application Development Hackathon, the IEEE Student Branch of UCSC proudly presents 'MadHack', an inter-university hackathon followed by a series of workshops. MadHack aims to let the participants put their creativity and innovation to the test by giving them the opportunity to develop in any platform of choice.

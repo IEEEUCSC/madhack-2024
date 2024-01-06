@@ -28,3 +28,29 @@
 
     padding-right: 30px;
 }
+
+
+/* Add this to your Registration.scss file */
+.btn-loading {
+  position: relative;
+  pointer-events: none; /* Disable interactions while loading */
+
+  &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #fff;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+      animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}

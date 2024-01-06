@@ -53,7 +53,7 @@ const Timeline: React.FC = () => {
 
   let items = [
     {
-      date: "Jan 5th",
+      date: "Jan 6th",
       event: "Awareness Session",
       description: "Mobile App Designing Session",
       state: "Virtual"

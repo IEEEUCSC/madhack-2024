@@ -32,7 +32,7 @@ const App = () => {
             <Hero/>
             <Intro/>
             <Timeline/>
-            <Prizes/>
+            {/*<Prizes/>*/}
             <Faq/>
         </div>
     }/>

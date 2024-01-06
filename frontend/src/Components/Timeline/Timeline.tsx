@@ -102,8 +102,8 @@ const Timeline: React.FC = () => {
               </div>
             </div>
             <div className="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus
-                eligendi. Nesciunt repellendus ab voluptatibus.</p>
+              {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus*/}
+              {/*  eligendi. Nesciunt repellendus ab voluptatibus.</p>*/}
             </div>
           </div>
           <div className="row align-items-stretch program">

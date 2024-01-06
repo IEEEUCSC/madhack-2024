@@ -13,6 +13,7 @@ export default function Registration() {
     const {register, handleSubmit, formState: {errors}, reset} = useForm();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const onSubmit = async (data: any) => {
+        try{
         setIsSubmitting(true)
         let response: ResponseModel = await Network.shared.register(data)
         // alert(response.message)
@@ -31,7 +32,13 @@ export default function Registration() {
         if (response.success) {
             reset()
         }
+    }
+    catch(e){
+        console.log(e)
+    }
+    finally{
         setIsSubmitting(false)
+    }
     }
 
     return (

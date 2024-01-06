@@ -32,4 +32,4 @@ const sessionSchema = new mongoose.Schema({
 //     year: string;
 // }
 
-export default mongoose.model('Session', sessionSchema);
+export default mongoose.model('AppDesginSession', sessionSchema);

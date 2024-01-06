@@ -34,7 +34,7 @@ export default function Registration() {
         <div className="site-section local-bootstrap reg-section">
 
             <div className="container">
-                <h1 className='py-2'> Register for the Awareness Session </h1>
+                <h1 className='py-2'> Register for the Mobile App Designing Session </h1>
 
 
                 <div className="row">
@@ -67,9 +67,9 @@ export default function Registration() {
                             <div className="row form-group">
                                 <div className="col-md-12">
                                     <label htmlFor="university">University of study</label>
-                                    <select id="university" className="form-control"
+                                    <select id="university" className="form-control" defaultValue={"Other"}
                                             {...register("university", {required: true})}>
-                                        <option value="" disabled selected>University *</option>
+                                        {/* <option value="" disabled selected>University *</option> */}
                                         <option value="University of Colombo School of Computing">
                                             University of Colombo School of Computing (UCSC)
                                         </option>
@@ -123,7 +123,7 @@ export default function Registration() {
                                         <option value="Australian College of Business and Technology">
                                             Australian College of Business and Technology
                                         </option>
-                                        <option value="other">Other</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
                             </div>

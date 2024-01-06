@@ -55,32 +55,62 @@ const Timeline: React.FC = () => {
     {
       date: "Jan 6th",
       event: "Awareness Session",
-      description: "Mobile App Designing Session",
+      description: "",
+      state: "Virtual"
+    },
+    {
+      date: "Jan 10th",
+      event: "Mobile App Designing Session",
+      description: "",
       state: "Virtual"
     },
     {
       date: "Jan 21st",
       event: "Flutter Session - Basics",
-      description: "Flutter Session - Advance & Open Initial Round",
-      state: "Virtual"
+      description: "",
+      state: "Onsite"
+    },
+    {
+      date: "Jan 21st",
+      event: "Open Initial Round Submissions",
+      description: "",
+      state: ""
+    },
+    {
+      date: "Jan 25st",
+      event: "Flutter Session - Advance",
+      description: "",
+      state: "Onsite"
     },
     {
       date: "Jan 28th",
       event: "Close Initial Round",
-      description: "Announcement of Finalists",
-      state: "Onsite"
+      description: "",
+      state: ""
+    },
+    {
+      date: "Feb 1st",
+      event: "Announcement of Finalists",
+      description: "",
+      state: "Virtual"
     },
     {
       date: "Feb 3rd",
       event: "Final Hackathon",
-      description: "Final Hackathon & Award Ceremony",
+      description: "",
+      state: "Onsite"
+    },
+    {
+      date: "Feb 4th",
+      event: "Final Hackathon & Award Ceremony",
+      description: "",
       state: "Onsite"
     },
   ]
 
   function timelineItem(date: string, event: string, description: string, state: string, dataDelay: number, borderTop: boolean = false) {
     return (
-        <div className={`col-12 border-bottom py-5 ${borderTop ? " border-top " : ""}`} data-aos="fade" data-aos-delay={`${dataDelay}`}>
+        <div  key={event} className={`col-12 border-bottom py-5 ${borderTop ? " border-top " : ""}`} data-aos="fade" data-aos-delay={`${dataDelay}`}>
           <div className="row align-items-stretch">
             <div className="col-md-3 text-white mb-3 mb-md-0"><span className="h4">{date}</span> <span>{state}</span></div>
             <div className="col-md-9">

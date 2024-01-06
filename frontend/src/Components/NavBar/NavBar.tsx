@@ -23,7 +23,7 @@ function NavBar() {
                       <li><HashLink onClick={hideNavBar} smooth to="/#">Home</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#about">About</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#timeline">Timeline</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li>
+                      {/*<li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li>*/}
                       <li><HashLink onClick={hideNavBar} smooth to="/#faq">Faq</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
                   </ul>
@@ -43,7 +43,7 @@ function NavBar() {
                                   <li><a href="/#">Home</a></li>
                                   <li><a href="/#about">About</a></li>
                                   <li><a href="/#timeline">Timeline</a></li>
-                                  <li><a href="/#prizes">Prizes</a></li>
+                                  {/*<li><a href="/#prizes">Prizes</a></li>*/}
                                   <li><a href="/#faq">Faq</a></li>
                                   {/* <li><a className="cta" href="/register">Register Now</a></li> */}
                                     <li><HashLink className="cta" to="/register">Register Now</HashLink></li>

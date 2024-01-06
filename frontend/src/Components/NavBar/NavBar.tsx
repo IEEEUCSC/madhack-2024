@@ -20,11 +20,11 @@ function NavBar() {
               </div>
               <div className="site-mobile-menu-body">
                   <ul className={"site-nav-wrap"}>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#">home</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#about">about</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#timeline">timeline</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">prizes</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#faq">faq</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#">Home</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#about">About</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#timeline">Timeline</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#faq">Faq</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
                   </ul>
               </div>
@@ -40,11 +40,11 @@ function NavBar() {
                       <div className="col-12 col-md-10 d-none d-xl-block">
                           <nav className="site-navigation position-relative text-right" role="navigation">
                               <ul className="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                  <li><a href="/#">home</a></li>
-                                  <li><a href="/#about">about</a></li>
-                                  <li><a href="/#timeline">timeline</a></li>
-                                  <li><a href="/#prizes">prizes</a></li>
-                                  <li><a href="/#faq">faq</a></li>
+                                  <li><a href="/#">Home</a></li>
+                                  <li><a href="/#about">About</a></li>
+                                  <li><a href="/#timeline">Timeline</a></li>
+                                  <li><a href="/#prizes">Prizes</a></li>
+                                  <li><a href="/#faq">Faq</a></li>
                                   {/* <li><a className="cta" href="/register">Register Now</a></li> */}
                                     <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
                               </ul>

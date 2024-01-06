@@ -194,7 +194,7 @@
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
+  background: #092341;
   height: 100vh;
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -247,7 +247,7 @@
   padding: 10px 20px;
   display: block;
   position: relative;
-  color: #212529;
+  color: #abb1b4;
 }
 .nav-bar .site-mobile-menu .site-nav-wrap a.cta {
   background-color: #212529;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {useForm} from 'react-hook-form';
 
 // sweetalert2
@@ -9,8 +9,12 @@ import {Network, ResponseModel} from "../../Network";
 
 
 export default function Registration() {
+
     const {register, handleSubmit, formState: {errors}, reset} = useForm();
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const onSubmit = async (data: any) => {
+        try{
+        setIsSubmitting(true)
         let response: ResponseModel = await Network.shared.register(data)
         // alert(response.message)
         // use site styles
@@ -28,6 +32,13 @@ export default function Registration() {
         if (response.success) {
             reset()
         }
+    }
+    catch(e){
+        console.log(e)
+    }
+    finally{
+        setIsSubmitting(false)
+    }
     }
 
     return (
@@ -143,9 +154,11 @@ export default function Registration() {
 
                             <div className="row form-group">
                                 <div className="col-md-12">
-                                    <input type="submit" value="Register"
-                                           className="btn btn-primary py-2 px-4 text-white"/>
-                                </div>
+                                <input type="submit"
+                           value={isSubmitting ? "Registering..." : "Register"}
+                           className={`btn btn-primary py-2 px-4 text-white ${isSubmitting ? 'btn-loading' : ''}`}
+                           disabled={isSubmitting} />
+                            </div>
                             </div>
                         </form>
                     </div>

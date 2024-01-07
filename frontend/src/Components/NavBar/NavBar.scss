@@ -11,9 +11,24 @@
 
 .nav-bar {
   .logo img {
-    max-height: 2rem;
+    max-height: 4rem;
     width: auto;
   }
+
+  @media screen and (max-width: 1200px) {
+    .logo img {
+      max-height: 3rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 450px) {
+    .logo img {
+      max-height: 2rem;
+    }
+    
+  }
+
 
 
   /* Navbar */
@@ -22,6 +37,9 @@
     z-index: 1999;
     position: absolute;
     width: 100%;
+    background:  rgba(0, 0, 0, 1.0) 100%;
+    // background-blend-mode: overlay;
+
   }
 
   .site-navbar.transparent {

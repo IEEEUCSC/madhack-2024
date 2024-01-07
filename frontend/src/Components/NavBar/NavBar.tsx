@@ -11,7 +11,8 @@ function NavBar() {
         }
     }
   return (
-      <div className="nav-bar local-bootstrap">
+    // background-color
+      <div className="nav-bar local-bootstrap sticky-top" >
           <div className="site-mobile-menu">
               <div className="site-mobile-menu-header">
                   <div className="site-mobile-menu-close mt-3">
@@ -32,7 +33,7 @@ function NavBar() {
                   </ul>
               </div>
           </div>
-          <header className="site-navbar py-3 site-container" role="banner">
+          <header className="site-navbar py-3 site-container " role="banner">
               <div className="container">
                   <div style={{flexWrap: "nowrap"}} className="row align-items-center">
                       <div className="col-11 col-xl-2">

@@ -29,6 +29,7 @@ function NavBar() {
 
 
                       <li><HashLink onClick={hideNavBar} smooth to="/#faq">Faq</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
                   </ul>
               </div>
@@ -53,6 +54,7 @@ function NavBar() {
                                   {/* <li><a href="/#prizes">Prizes</a></li> */}
 
                                   <li><a href="/#faq">Faq</a></li>
+                                  <li><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
                                   {/* <li><a className="cta" href="/register">Register Now</a></li> */}
                                     <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
                               </ul>

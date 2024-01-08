@@ -9,14 +9,25 @@
   /* Navbar */
 }
 .nav-bar .logo img {
-  max-height: 2rem;
+  max-height: 4rem;
   width: auto;
+}
+@media screen and (max-width: 1200px) {
+  .nav-bar .logo img {
+    max-height: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav-bar .logo img {
+    max-height: 2rem;
+  }
 }
 .nav-bar .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
   position: absolute;
   width: 100%;
+  background: rgb(0, 0, 0) 100%;
 }
 .nav-bar .site-navbar.transparent {
   background: transparent;

@@ -18,6 +18,7 @@ import Footer from './Components/Footer/Footer';
 
 import Registration from './Components/Registration/Registration'
 import Intro from "./Components/Introduction/Intro";
+import ContactUS from "./Components/ContactUs/ContactUs";
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
             <Timeline/>
             {/*<Prizes/>*/}
             <Faq/>
+            <ContactUS/>
         </div>
     }/>
 </Routes>

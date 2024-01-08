@@ -10,6 +10,8 @@ export const register = async (req: Request, res: Response) => {
       number: req.body.number,
       university: req.body.university,
       year: req.body.year,
+      platform: req.body.platform,
+      design: req.body.design,
     });
     await newSession.save();
 

@@ -152,6 +152,51 @@ export default function Registration() {
                                 </div>
                             </div>
 
+                            {/* What's your preferred platform for mobile app development?
+
+Android Studio (Java/Kotlin)
+Xcode (Swift/Objective-C)
+Flutter/Dart
+React Native
+Other 
+ */}
+                            <div className="row form-group">
+                                <div className="col-md-12">
+                                    <label htmlFor="preferred-platform">What's your preferred platform for mobile
+                                        app development?</label>
+                                    <select id="preferred-platform" className="form-control"
+                                            {...register("platform", {required: true})}>
+                                        <option value="Android Studio (Java/Kotlin)">Android Studio (Java/Kotlin)</option>
+                                        <option value="Xcode (Swift/Objective-C)">Xcode (Swift/Objective-C)</option>
+                                        <option value="Flutter/Dart">Flutter/Dart</option>
+                                        <option value="React Native">React Native</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            {/* What design tool do you prefer for creating UI/UX designs for mobile apps?
+
+Adobe XD
+Sketch
+Figma
+InVision
+Other */}
+                            <div className="row form-group">
+                                <div className="col-md-12">
+                                    <label htmlFor="design-tool">What design tool do you prefer for creating UI/UX
+                                        designs for mobile apps?</label>
+                                    <select id="design-tool" className="form-control"
+                                            {...register("design", {required: true})}>
+                                        <option value="Adobe XD">Adobe XD</option>
+                                        <option value="Sketch">Sketch</option>
+                                        <option value="Figma">Figma</option>
+                                        <option value="InVision">InVision</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div className="row form-group">
                                 <div className="col-md-12">
                                 <input type="submit"

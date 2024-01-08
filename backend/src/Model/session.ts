@@ -21,7 +21,17 @@ const sessionSchema = new mongoose.Schema({
     year:{
         type: String,
         required: true
-    }
+    },
+    platform:{
+        type: String,
+        required: true
+    },
+    design:{
+        type: String,
+        required: true
+    },
+
+
 });
 
 // interface ISession extends Document {

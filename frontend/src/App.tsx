@@ -17,6 +17,8 @@ import Footer from './Components/Footer/Footer';
 
 
 import Registration from './Components/Registration/Registration'
+import TeamRegistration from './Components/Registration/Team'
+
 import Intro from "./Components/Introduction/Intro";
 import ContactUS from "./Components/ContactUs/ContactUs";
 
@@ -27,6 +29,7 @@ const App = () => {
             <NavBar/>
             <Routes>
     <Route path="/register" element={<Registration/>} />
+    <Route path="/team" element={<TeamRegistration/>} />
 
     <Route path="/*" element={
         <div>

@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import sessionRegRoute from "./Routes/sessionReg";
+import teamRoute from "./Routes/team";
 dotenv.config();
 
 const URL = process.env.MONGO || "mongodb://localhost:27017/";
@@ -34,6 +35,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/api/register", sessionRegRoute);
+app.use("/api/team", teamRoute);
 
 const connect = async () => {
   try {

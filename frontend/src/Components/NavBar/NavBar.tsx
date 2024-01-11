@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../assets/logo.png'
 import './NavBar.scss'
 import { HashLink } from 'react-router-hash-link'
 
 function NavBar() {
+
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['home', 'about', 'timeline', 'faq', 'contact'];
+            for (let i = 0; i < sections.length; i++) {
+                const element = document.getElementById(sections[i]);
+                if (element && window.pageYOffset >= element.offsetTop) {
+                    setActiveSection(sections[i]);
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     function hideNavBar() {
         if (document.body.classList.contains("offcanvas-menu")) {
@@ -21,7 +37,7 @@ function NavBar() {
               </div>
               <div className="site-mobile-menu-body">
                   <ul className={"site-nav-wrap"}>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#">Home</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/#home">Home</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#about">About</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#timeline">Timeline</HashLink></li>
 
@@ -47,16 +63,12 @@ function NavBar() {
                       <div className="col-12 col-md-10 d-none d-xl-block">
                           <nav className="site-navigation position-relative text-right" role="navigation">
                               <ul className="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                  <li><a href="/#">Home</a></li>
-                                  <li><a href="/#about">About</a></li>
-                                  <li><a href="/#timeline">Timeline</a></li>
-
-                                  {/* <li><a href="/#prizes">Prizes</a></li> */}
-
-                                  <li><a href="/#faq">Faq</a></li>
-                                  <li><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
-                                  {/* <li><a className="cta" href="/register">Register Now</a></li> */}
-                                    <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
+                                  <li className={activeSection === 'home' ? 'active' : ''}><a href="/#home">Home</a></li>
+                                  <li className={activeSection === 'about' ? 'active' : ''}><a href="/#about">About</a></li>
+                                  <li className={activeSection === 'timeline' ? 'active' : ''}><a href="/#timeline">Timeline</a></li>
+                                  <li className={activeSection === 'faq' ? 'active' : ''}><a href="/#faq">Faq</a></li>
+                                  <li className={activeSection === 'contact' ? 'active' : ''}><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
+                                  <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
                               </ul>
                           </nav>
                       </div>

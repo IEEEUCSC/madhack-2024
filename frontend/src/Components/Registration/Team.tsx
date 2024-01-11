@@ -58,10 +58,16 @@ if (teamMemberCount === 2) {
         }
     };
 
+
+    // get team count Network.shared.getTeamCount()
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const result = await Network.shared.getTeamCount();
+
     return (
         <div className="site-section local-bootstrap reg-section">
             <div className="container">
-                <h1 className='py-2'> Register for the Mobile App Designing Session </h1>
+                <h1 className='py-2'> Register for the MADHACK 3.0 hackathon</h1>
 
                 <div className="row">
                     <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">
@@ -162,12 +168,14 @@ if (teamMemberCount === 2) {
 
 
                             {/* Team Leader Information */}
-                            <h3>Team Leader</h3>
+                            {/* <h3>Team Leader</h3> */}
                             {renderMemberFields("leader", register)}
 
 
                             {/* Team Member Count */}
                             <div className="row form-group">
+                                {/* Member */}
+                                
                                 <div className="col-md-12">
                                     <label htmlFor="team-member-count">Number of Team Members</label>
                                     <select id="team-member-count" className="form-control"
@@ -179,7 +187,7 @@ if (teamMemberCount === 2) {
                             </div>
 
                             {/* Team Member Information */}
-                            <h3>Team Members</h3>
+                            {/* <h3>Team Members</h3> */}
                             {teamMembers.map(member =>
                                 renderMemberFields(member, register)
                             )}
@@ -204,6 +212,9 @@ if (teamMemberCount === 2) {
 function renderMemberFields(prefix:string, register:any) {
     return (
         <div className="row form-group">
+            <h3>
+                {prefix === "leader" ? "Team Leader" : `Team Member ${prefix.replace("member", "")}`}
+            </h3>
             <div className="col-md-6">
                 <label htmlFor={`${prefix}-name`}>Name</label>
                 <input type="text" id={`${prefix}-name`} className="form-control"

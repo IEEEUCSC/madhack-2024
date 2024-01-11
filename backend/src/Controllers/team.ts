@@ -97,3 +97,17 @@ export const register = async (req: Request, res: Response) => {
   //   console.log(err)
   // }
 };
+
+
+
+export const count = (req: Request, res: Response): void => {
+  Team.countDocuments({}, (err: any, count: any) => {
+    if (err) {
+      console.error('Error counting teams:', err);
+      res.status(500).send('Error counting teams');
+      return;
+    }
+    console.log("Number of teams:", count);
+    res.status(200).json({ teamCount: count });
+  });
+};

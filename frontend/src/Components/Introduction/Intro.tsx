@@ -13,7 +13,7 @@ export default function Intro() {
                                 <span>Introducing</span>
                                 <span> </span>
                                 <span className={"font-acquire"}>MAD</span>
-                                <span className={"font-acquire-light"}>HACK</span>
+                                <span className={"font-acquire"}>HACK</span>
                             </h2>
                         </div>
                     </div>

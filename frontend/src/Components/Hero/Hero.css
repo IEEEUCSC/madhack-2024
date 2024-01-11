@@ -16,6 +16,7 @@
   background: linear-gradient(to right, #54C5F7, #02A8E1 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "AquireBol", serif !important;
 }
 
 @media (min-width: 992px) {

@@ -138,10 +138,10 @@ code {
     position: absolute;
     width: 100px;
     height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from($blue-grad-start), color-stop(70%, $blue-grad-end));
-    background: -webkit-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: -o-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: linear-gradient(to right, $blue-grad-start, $blue-grad-end 70%);
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
   }
 
   @media (min-width: 992px) {
@@ -185,10 +185,10 @@ code {
   }
 
   .btn-custom:before {
-    background: -webkit-gradient(linear, left top, right top, from($blue-grad-start), color-stop(70%, $blue-grad-end));
-    background: -webkit-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: -o-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: linear-gradient(to right, $blue-grad-start, $blue-grad-end 70%);
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
     content: "";
     position: absolute;
     left: 0;

@@ -51,7 +51,7 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-.slots-remaining-red {
+.local-bootstrap .slots-remaining-red {
   color: #fff;
   background-color: #dc3545 !important;
   border-color: #dc3545 !important;
@@ -59,7 +59,7 @@
   border-radius: 5px;
 }
 
-.slots-remaining-green {
+.local-bootstrap .slots-remaining-green {
   color: #fff;
   background-color: #28a745 !important;
   border-color: #28a745 !important;

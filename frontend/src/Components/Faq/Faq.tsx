@@ -42,7 +42,7 @@ const styles = {
     titleTextColor: "#fff",
     rowTitleColor: "#fff",
     rowContentColor: '#d1d1d1',
-    arrowColor: "#fff",
+    arrowColor: "#02A8E1",
 };
 
 const config = {

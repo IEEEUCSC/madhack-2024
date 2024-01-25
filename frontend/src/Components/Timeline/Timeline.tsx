@@ -65,57 +65,61 @@ const Timeline: React.FC = () => {
       state: "Virtual"
     },
     {
-      date: "Jan 21st",
-      event: "Flutter Session - Basics",
+      date: "Feb 4th",
+      event: "Workshop - Flutter Session - Basics",
       description: "",
       state: "Onsite"
     },
     {
-      date: "Jan 21st",
+      date: "Feb 5th",
       event: "Open Initial Round Submissions",
       description: "",
       state: ""
     },
     {
-      date: "Jan 25st",
-      event: "Flutter Session - Advance",
+      date: "Feb 11th",
+      event: "Workshop - Flutter Session - Advanced",
       description: "",
       state: "Onsite"
     },
     {
-      date: "Jan 28th",
-      event: "Close Initial Round",
+      date: "Feb 13th",
+      event: "Close Initial Round Submissions",
       description: "",
       state: ""
     },
     {
-      date: "Feb 1st",
+      date: "Feb 19th",
       event: "Announcement of Finalists",
       description: "",
       state: "Virtual"
     },
     {
-      date: "Feb 3rd",
+      date: "Feb 24th",
       event: "Final Hackathon",
       description: "",
       state: "Onsite"
     },
     {
-      date: "Feb 4th",
+      date: "Feb 25th",
       event: "Final Hackathon & Award Ceremony",
       description: "",
       state: "Onsite"
     },
   ]
 
-  function timelineItem(date: string, event: string, description: string, state: string, dataDelay: number, borderTop: boolean = false) {
+  function timelineItem(date: string, event: string,state: string, index: number) {
+    console.log(index%2)
     return (
-        <div  key={event} className={`col-12 border-bottom py-5 ${borderTop ? " border-top " : ""}`} data-aos="fade" data-aos-delay={`${dataDelay}`}>
-          <div className="row align-items-stretch">
-            <div className="col-md-3 text-white mb-3 mb-md-0"><span className="h4">{date}</span> <span>{state}</span></div>
-            <div className="col-md-9">
-              <h2 className="text-white">{event}</h2>
-              <span>{description}</span>
+        <div className={`timeline-4 ${index%2===0?'left':'right'}-4`} key={index}>
+          <div className={`card gradient-custom${index%2===0?'-4':''}`}>
+            <div className="card-body p-4">
+              <i className="fas fa-brain fa-2x mb-3"></i>
+              <h4>{event}</h4>
+              <p className="small text-secondary-50 mb-4">{state}</p>
+              <p>
+                {date}
+              </p>
             </div>
           </div>
         </div>
@@ -123,24 +127,21 @@ const Timeline: React.FC = () => {
   }
 
   return (
-      <div className="site-section" id={"timeline"}>
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4" data-aos="fade-up">
+      <div className="site-section local-bootstrap remove-top-pad" id={"timeline"}>
+        <div className="container py-5">
+          <div className="row py-4">
+            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div className="site-section-heading">
-                <h2>Programs</h2>
+                <h2>
+                  <span>Timeline</span>
+                </h2>
               </div>
             </div>
-            <div className="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-              {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus*/}
-              {/*  eligendi. Nesciunt repellendus ab voluptatibus.</p>*/}
-            </div>
           </div>
-          <div className="row align-items-stretch program">
+          <div className="main-timeline-4 text-white">
             {
               items.map((item, index) => {
-                return timelineItem(item.date, item.event, item.description, item.state,
-                    200 + 100*index, index == 0)
+                return timelineItem(item.date, item.event, item.state, index)
               })
             }
           </div>

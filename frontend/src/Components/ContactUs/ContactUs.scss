@@ -1,0 +1,21 @@
+.row{
+display: flex;
+justify-content: space-between;
+}
+
+.img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.col-lg-4 {
+    flex: 1;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+}
+

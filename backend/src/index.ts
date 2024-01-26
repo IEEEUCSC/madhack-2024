@@ -37,6 +37,7 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/api/register", sessionRegRoute);
 app.use("/api/team", teamRoute);
 
+
 const connect = async () => {
   try {
     await mongoose.connect(URL);

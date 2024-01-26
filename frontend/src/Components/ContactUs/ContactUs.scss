@@ -1,0 +1,67 @@
+// .row {
+//     display: flex;
+//     flex-wrap: nowrap; // Ensure items don't wrap to the next line
+//     overflow-x: auto; // Add horizontal scroll if content overflows
+// }
+
+.row{
+display: flex;
+justify-content: space-between;
+}
+
+.img {
+    width: 200px;
+    /* Set the width and height of the image */
+    height: 300px;
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+    border-radius: 50%;
+    /* Set border-radius to 50% to create a circle */
+    /* Additional styles if needed */
+}
+
+.col-lg-4 {
+    flex: 1;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        
+    // .p-4.mb-3 {
+    //         display: flex;
+    //         flex-direction: column;
+    //         height: 100%;
+    //     }
+    
+    //     .p-4.mb-3>* {
+    //         flex: 1;
+    //         /* Distribute the available space equally among child elements */
+    //     }
+}
+
+// .p-4.mb-3 {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     /* Ensure the div takes the full height of its container */
+// }
+
+.space{
+    >p {
+            margin-bottom: 10px; // Adjust the margin-bottom to decrease space between <p> tags
+        }
+}
+
+.space {
+    /* Your styles for the space div */
+}
+
+.space p {
+    margin-bottom: 10px;
+    /* Adjust the margin-bottom to create space between paragraphs */
+}
+
+.space p:last-child {
+    margin-bottom: 0;
+    /* Remove margin-bottom for the last paragraph to avoid extra space */
+}

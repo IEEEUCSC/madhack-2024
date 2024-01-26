@@ -1,7 +1,28 @@
 @import "variables";
+@import "~bootstrap/scss/bootstrap";
 
-.local-bootstrap {
-  @import "~bootstrap/scss/bootstrap";
+@font-face {
+  font-family: "AquireBol";
+  src: local("AirbnbCerealLight"),
+  url("./Fonts/AquireBold-8Ma60.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "AquireLight";
+  src: local("AirbnbCerealLight"),
+  url("./Fonts/AquireLight-YzE0o.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aquire";
+  src: local("AirbnbCerealLight"),
+  url("./Fonts/Aquire-BW0ox.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  src: local("AirbnbCerealLight"),
+  url("./Fonts/NeueMachina-Regular.otf") format("truetype");
 }
 
 html {
@@ -11,8 +32,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Mono',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'NeueMachina',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -138,10 +158,10 @@ code {
     position: absolute;
     width: 100px;
     height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from($blue-grad-start), color-stop(70%, $blue-grad-end));
-    background: -webkit-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: -o-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: linear-gradient(to right, $blue-grad-start, $blue-grad-end 70%);
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
   }
 
   @media (min-width: 992px) {
@@ -185,10 +205,10 @@ code {
   }
 
   .btn-custom:before {
-    background: -webkit-gradient(linear, left top, right top, from($blue-grad-start), color-stop(70%, $blue-grad-end));
-    background: -webkit-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: -o-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
-    background: linear-gradient(to right, $blue-grad-start, $blue-grad-end 70%);
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
+    background: $blue-grad-end;
     content: "";
     position: absolute;
     left: 0;

@@ -10,12 +10,13 @@
 
 .site-hero h1 {
   font-size: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#00c6ff), color-stop(70%, #0072ff));
-  background: -webkit-linear-gradient(left, #00c6ff, #0072ff 70%);
-  background: -o-linear-gradient(left, #00c6ff, #0072ff 70%);
-  background: linear-gradient(to right, #00c6ff, #0072ff 70%);
+  background: -webkit-gradient(linear, left top, right top, from(#54C5F7), color-stop(70%, #02A8E1));
+  background: -webkit-linear-gradient(left, #54C5F7, #02A8E1 70%);
+  background: -o-linear-gradient(left, #54C5F7, #02A8E1 70%);
+  background: linear-gradient(to right, #54C5F7, #02A8E1 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "AquireBol", serif !important;
 }
 
 @media (min-width: 992px) {
@@ -43,7 +44,7 @@
   bottom: 6px;
   width: 14px;
   height: 2px;
-  background-color: #00c6ff;
+  background-color: #54C5F7;
   animation: blink 0.5s linear infinite;
 }
 

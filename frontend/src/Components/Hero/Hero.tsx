@@ -44,7 +44,7 @@ function Hero() {
 
 
     return (
-      <div className="site-section site-hero local-bootstrap">
+      <div className="site-section site-hero local-bootstrap" id={"home"}>
           <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-10">

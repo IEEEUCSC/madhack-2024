@@ -9,7 +9,7 @@ function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'about', 'timeline', 'faq', 'contact'];
+            const sections = ['home', 'about', 'timeline','prizes', 'faq', 'contact'];
             for (let i = 0; i < sections.length; i++) {
                 const element = document.getElementById(sections[i]);
                 if (element && window.pageYOffset >= element.offsetTop) {
@@ -37,16 +37,13 @@ function NavBar() {
               </div>
               <div className="site-mobile-menu-body">
                   <ul className={"site-nav-wrap"}>
-                      <li><HashLink onClick={hideNavBar} smooth to="/#home">Home</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth to="/">Home</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#about">About</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#timeline">Timeline</HashLink></li>
-
-                      {/* <li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li> */}
-
-
+                      <li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#faq">Faq</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/">Register Now</HashLink></li>
                   </ul>
               </div>
           </div>
@@ -66,9 +63,11 @@ function NavBar() {
                                   <li className={activeSection === 'home' ? 'active' : ''}><a href="/#home">Home</a></li>
                                   <li className={activeSection === 'about' ? 'active' : ''}><a href="/#about">About</a></li>
                                   <li className={activeSection === 'timeline' ? 'active' : ''}><a href="/#timeline">Timeline</a></li>
+                                  <li className={activeSection === 'prizes' ? 'active' : ''}><a href="/#prizes">Prizes</a></li>          {/*// */ }
                                   <li className={activeSection === 'faq' ? 'active' : ''}><a href="/#faq">Faq</a></li>
                                   <li className={activeSection === 'contact' ? 'active' : ''}><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
-                                  <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
+                                  {/* <li><HashLink className="cta" to="/register">Register Now</HashLink></li> */}
+                                  <li><HashLink className="cta" to="/team">Register Now</HashLink></li>
                               </ul>
                           </nav>
                       </div>

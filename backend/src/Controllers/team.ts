@@ -2,6 +2,7 @@ import Team from "../Model/team";
 import{  Request, Response } from "express";
 
 
+const expectTeamCount = 0;
 
 const teamCount = async (): Promise<number> => { 
   try {
@@ -20,7 +21,9 @@ export const register = async (req: Request, res: Response) => {
 
 // count teams and return if 50 teams are already registered
   const count = await teamCount();
-  if (count >= 0) {
+
+  if (count >= expectTeamCount) {
+
     res.status(200).json({
       success: false,
       message: "Registration is currently closed because the maximum number of teams has been reached.",
@@ -87,7 +90,7 @@ export const register = async (req: Request, res: Response) => {
 export const count = (req: Request, res: Response): void => {
   Team.countDocuments({}).then(count => {
     console.log("Number of teams:", count);
-    res.status(200).json({ teamCount: 50 - count });
+    res.status(200).json({ teamCount: expectTeamCount - count });
   }).catch(err => {
     console.error('Error counting teams:', err);
     res.status(500).send('Error counting teams');

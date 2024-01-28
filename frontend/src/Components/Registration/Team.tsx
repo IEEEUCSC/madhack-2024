@@ -25,10 +25,6 @@ export default function Registration() {
         setUniversity(watchFields.university);
     }, [watchFields]);
 
-
-
-
-
     useEffect(() => {
 if (teamMemberCount === 2) {   
     setTeamMembers(["member1", "member2"]);
@@ -184,14 +180,8 @@ if (teamMemberCount === 2) {
                             </div>
                             )}
 
+                             {/* Team Member Count */}
 
-
-                            {/* Team Leader Information */}
-                            {/* <h3>Team Leader</h3> */}
-                            {renderMemberFields("leader", register)}
-
-
-                            {/* Team Member Count */}
                             <div className="row form-group">
                                 {/* Member */}
                                 
@@ -199,11 +189,18 @@ if (teamMemberCount === 2) {
                                     <label htmlFor="team-member-count">Number of Team Members</label>
                                     <select id="team-member-count" className="form-control"
                                             onChange={(e) => setTeamMemberCount(parseInt(e.target.value))}>
-                                        <option value={2}>2</option>
-                                        <option value={3}>3</option>
+                                        <option value={2}>3</option>
+                                        <option value={3}>4</option>
                                     </select>
                                 </div>
                             </div>
+
+
+                            {/* Team Leader Information */}
+                            {/* <h3>Team Leader</h3> */}
+                            {renderMemberFields("leader", register)}
+
+
 
                             {/* Team Member Information */}
                             {/* <h3>Team Members</h3> */}

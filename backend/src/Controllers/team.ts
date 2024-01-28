@@ -20,7 +20,7 @@ export const register = async (req: Request, res: Response) => {
 
 // count teams and return if 50 teams are already registered
   const count = await teamCount();
-  if (count >= 0) {
+  if (count >= 50) {
     res.status(200).json({
       success: false,
       message: "Registration is currently closed because the maximum number of teams has been reached.",

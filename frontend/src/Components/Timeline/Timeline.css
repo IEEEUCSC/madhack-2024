@@ -109,9 +109,9 @@
   top: 18px;
   z-index: 1;
   right: 30px;
-  border: medium solid #02A8E1;
+  border: medium solid #195baa;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #02A8E1;
+  border-color: transparent transparent transparent #195baa;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -121,9 +121,9 @@
   top: 18px;
   z-index: 1;
   left: 30px;
-  border: medium solid #54C5F7;
+  border: medium solid #0f3764;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #54C5F7 transparent transparent;
+  border-color: transparent #0f3764 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -146,9 +146,9 @@
   /* Make sure that all arrows are pointing leftwards */
   .timeline-4::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid #0f3764;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #0f3764 transparent transparent;
   }
   /* Make sure all circles are at the same spot */
   .left-4::after,
@@ -168,19 +168,19 @@
   /* fallback for old browsers */
   background: #6a11cb;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #54C5F7, #02A8E1);
+  background: -webkit-linear-gradient(to right, #0f3764, #195baa);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #54C5F7, #02A8E1);
+  background: linear-gradient(to right, #0f3764, #195baa);
 }
 
 .gradient-custom-4 {
   --bs-card-border-width: none !important;
   /* fallback for old browsers */
-  background: #f093fb;
+  background: #0b407e;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #02A8E1, #54C5F7);
+  background: -webkit-linear-gradient(to left, #195baa, #0f3764);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #02A8E1, #54C5F7);
+  background: linear-gradient(to left, #195baa, #0f3764);
 }
 
 /*# sourceMappingURL=Timeline.css.map */

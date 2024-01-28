@@ -87,7 +87,10 @@ if (teamMemberCount === 2) {
 
                 <div className="row">
                     <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        {/* form disable if no slots remaining , add class to disable */}
+                        {/* <form onSubmit={handleSubmit(onSubmit)}> */}
+                        <form onSubmit={handleSubmit(onSubmit)} className={slotsRemaining <= 0 ? "disable-form" : ""}>
+                        
 
                             {/* Team Information */}
                             <div className="row form-group">
@@ -213,7 +216,7 @@ if (teamMemberCount === 2) {
                                     <input type="submit"
                                            value={isSubmitting ? "Registering..." : "Register"}
                                            className={`btn btn-primary py-2 px-4 text-white ${isSubmitting ? 'btn-loading' : ''}`}
-                                           disabled={isSubmitting} />
+                                           disabled={isSubmitting || slotsRemaining <= 0} />
                                 </div>
                             </div>
                         </form>

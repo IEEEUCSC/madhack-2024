@@ -25,7 +25,7 @@ export default function Registration() {
             background: '#232631',
             color: '#fff',
             // add link to whatsapp group with whatsapp icon
-            footer: '<a href="https://chat.whatsapp.com/LJ7CwK4eiRd3jkLntBfoj0" target="_blank"> Join our whatsapp group <br> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>'
+            // footer: '<a href="https://chat.whatsapp.com/LJ7CwK4eiRd3jkLntBfoj0" target="_blank"> Join our whatsapp group <br> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>'
         })
 
 

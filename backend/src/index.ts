@@ -34,7 +34,6 @@ app.get("/", (req: Request, res: Response) => {
     res.send("MADHACK API is running");
 });
 
-app.use("/api/register", sessionRegRoute);
 app.use("/api/team", teamRoute);
 
 

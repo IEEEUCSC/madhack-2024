@@ -1,37 +1,33 @@
 import Team from "../Model/team";
 import{  Request, Response } from "express";
 
+
+
+const teamCount = async (): Promise<number> => { 
+  try {
+    const count = await Team.countDocuments({});
+    console.log("Number of teams:", count);
+    return count;
+  } catch (err) {
+    console.error('Error counting teams:', err);
+    throw err;
+  }
+}
+
+
 export const register = async (req: Request, res: Response) => {
-  // console.log("", req.body)
-
-  console.log(req.body)
 
 
-// //{
-//   teamName: 'Megane Frami',
-//   university: 'University of Ruhuna',
-//   other: 'Culpa sapiente animi provident quod voluptas.',
-//   leaderName: 'Josue.Crooks',
-//   leaderYear: '2nd year',
-//   leaderWhatsapp: '369-359-1569',
-//   leaderEmail: 'your.email+fakedata32244@gmail.com',
-//   leaderNIC: 'Facere hic eius laboriosam sint cumque rerum ad cum.',
-//   member1Name: 'Caitlyn45',
-//   member1Year: '4th year',
-//   member1Whatsapp: '685-528-3764',
-//   member1Email: 'your.email+fakedata16577@gmail.com',
-//   member1NIC: '540',
-//   member2Name: 'Sally4',
-//   member2Year: '2nd year',
-//   member2Whatsapp: '007-837-0355',
-//   member2Email: 'your.email+fakedata26192@gmail.com',
-//   member2NIC: '13',
-//   member3Name: 'Lula.Bradtke',
-//   member3Year: '3rd year',
-//   member3Whatsapp: '971-866-6326',
-//   member3Email: 'your.email+fakedata19068@gmail.com',
-//   member3NIC: '522'
-// }
+// count teams and return if 50 teams are already registered
+  const count = await teamCount();
+  if (count >= 50) {
+    res.status(200).json({
+      success: false,
+      message: "Registration closed",
+    });
+    return;
+  }
+  else {
 
 
   try {
@@ -73,29 +69,10 @@ export const register = async (req: Request, res: Response) => {
     console.log(err)
   }
 
+}
 
-  // try {
-  //   const newSession = new Session({
-  //     email: req.body.email,
-  //     name: req.body.name,
-  //     number: req.body.number,
-  //     university: req.body.university,
-  //     year: req.body.year,
-  //     platform: req.body.platform,
-  //     design: req.body.design,
-  //   });
-  //   await newSession.save();
 
-  //   res.status(200).json({
-  //     success: true,
-  //     message: "Registered successfully",
-  //     data: newSession,
-  //   });
-    
-  // } catch (err) {
-  //   res.send(err)
-  //   console.log(err)
-  // }
+
 };
 
 

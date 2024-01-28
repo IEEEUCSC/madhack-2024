@@ -14,7 +14,7 @@
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  background: linear-gradient(to right, rgba(21, 129, 176, 0.53), rgba(25, 60, 134, 0.6));
+  background: linear-gradient(to right, #0f3764, #195baa);
   margin-top: 20px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .faq-row {
-  border-bottom: none !important;
+  border-bottom-color: #02A8E1 !important;
 }
 .faq-row:last-child {
   border-bottom: none;
@@ -48,10 +48,6 @@
   padding: 15px;
   line-height: 1.5;
   font-size: 1em;
-}
-
-.faq-row-wrapper .faq-body .faq-row .row-title {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=Faq.css.map */

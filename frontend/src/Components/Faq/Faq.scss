@@ -17,8 +17,8 @@
   backdrop-filter: blur(10px);
   background: linear-gradient(
                   to right,
-                  rgba(21, 129, 176, 0.53),
-                  rgba(25, 60, 134, 0.6));
+                  #0f3764,
+                  #195baa);
   margin-top: 20px;
 }
 
@@ -31,7 +31,8 @@
 
 // Styling for the FAQ component (react-faq-component specific classes)
 .faq-row {
-  border-bottom: none !important;
+  //border-bottom: none !important;
+  border-bottom-color: #02A8E1 !important;
 
   &:last-child {
       border-bottom: none;
@@ -64,7 +65,6 @@
   .faq-body {
     .faq-row {
       .row-title {
-        font-weight: bold;
       }
 
       .row-content {

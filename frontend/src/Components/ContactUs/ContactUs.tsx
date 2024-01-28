@@ -1,9 +1,9 @@
 import React from 'react'
 import "../ContactUs/ContactUs.scss"
-import poto1 from '../../assets/Savini.jpg'
-import poto2 from '../../assets/Noji.jpg'
-import poto3 from '../../assets/lakitha.jpg'
-import poto4 from '../../assets/Radhia.jpg'
+import poto1 from '../../assets/Savini.png'
+import poto2 from '../../assets/Noji.png'
+import poto3 from '../../assets/lakitha.png'
+import poto4 from '../../assets/Radhia.png'
 
 function ContactUS() {
 
@@ -21,7 +21,7 @@ function ContactUS() {
                 </div>
                 <div className="row">
 
-                    <div className="col-lg-4 col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3">
                                 <img src={poto4} alt="radhia" className="img" />
                             <p></p>
@@ -34,7 +34,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3">
                             <img src={poto1} alt="savini" className="img" />
                             <p></p>
@@ -47,7 +47,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3">
                             <img src={poto2} alt="noji" className="img" />
                             <p></p>
@@ -60,7 +60,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3">
                             <img src={poto3} alt="lakitha" className="img" />
                             <p></p>

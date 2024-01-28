@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.26cf130c.css",
-    "main.js": "/static/js/main.2da0dc8a.js",
+    "main.js": "/static/js/main.f8b3acee.js",
     "static/js/638.e392a388.chunk.js": "/static/js/638.e392a388.chunk.js",
     "static/media/Noji.png": "/static/media/Noji.807f106e910a8bc6d222.png",
     "static/media/lakitha.png": "/static/media/lakitha.5448db06edd08f434062.png",
@@ -29,11 +29,11 @@
     "static/media/ibm-plex-mono-vietnamese-400-normal.woff": "/static/media/ibm-plex-mono-vietnamese-400-normal.442fb799b2a313edbc10.woff",
     "index.html": "/index.html",
     "main.26cf130c.css.map": "/static/css/main.26cf130c.css.map",
-    "main.2da0dc8a.js.map": "/static/js/main.2da0dc8a.js.map",
+    "main.f8b3acee.js.map": "/static/js/main.f8b3acee.js.map",
     "638.e392a388.chunk.js.map": "/static/js/638.e392a388.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26cf130c.css",
-    "static/js/main.2da0dc8a.js"
+    "static/js/main.f8b3acee.js"
   ]
 }

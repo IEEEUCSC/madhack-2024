@@ -22,7 +22,7 @@ function ContactUS() {
                 <div className="row">
 
                     <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div className="p-4 mb-3">
+                        <div className="p-4 mb-3 contact-card">
                                 <img src={poto4} alt="radhia" className="img" />
                             <p></p>
                                 <p className="mb-3 font-weight-bold">Radiyah Hassan</p>
@@ -35,7 +35,7 @@ function ContactUS() {
                     </div>
 
                     <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div className="p-4 mb-3">
+                        <div className="p-4 mb-3 contact-card">
                             <img src={poto1} alt="savini" className="img" />
                             <p></p>
                             <p className="mb-3 font-weight-bold">Savini Rathnayake</p>
@@ -48,7 +48,7 @@ function ContactUS() {
                     </div>
 
                     <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div className="p-4 mb-3">
+                        <div className="p-4 mb-3 contact-card">
                             <img src={poto2} alt="noji" className="img" />
                             <p></p>
                             <p className="mb-3 font-weight-bold">Noji Yudara</p>
@@ -61,7 +61,7 @@ function ContactUS() {
                     </div>
 
                     <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div className="p-4 mb-3">
+                        <div className="p-4 mb-3 contact-card">
                             <img src={poto3} alt="lakitha" className="img" />
                             <p></p>
                             <p className="mb-3 font-weight-bold">Likitha Chathubhashini</p>

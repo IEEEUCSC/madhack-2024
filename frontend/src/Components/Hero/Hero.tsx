@@ -55,7 +55,7 @@ function Hero() {
                       </div>
                       <br className={"d-block"}></br>
                       {/* <a href="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a> */}
-                        <Link to="/" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now </span></Link>
+                        <Link to="/team" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now </span></Link>
                   </div>
               </div>
           </div>

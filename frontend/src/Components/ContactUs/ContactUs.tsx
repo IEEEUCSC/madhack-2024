@@ -21,12 +21,12 @@ function ContactUS() {
                 </div>
                 <div className="row">
 
-                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 col-md-3 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3 contact-card">
                                 <img src={poto4} alt="radhia" className="img" />
                             <p></p>
                                 <p className="mb-3 font-weight-bold">Radiyah Hassan</p>
-                                <p className="mb-0 ">Organizing committee president</p>
+                                <p className="mb-0 text-center">Organizing committee president</p>
                                 <p className="mb-0 text-secondary">Phone</p>
                                 <p className="mb-2"><a>+94 722501919</a></p>
                                 <p className="mb-0 text-secondary">Email Address</p>
@@ -34,7 +34,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 col-md-3 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3 contact-card">
                             <img src={poto1} alt="savini" className="img" />
                             <p></p>
@@ -47,7 +47,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 col-md-3 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3 contact-card">
                             <img src={poto2} alt="noji" className="img" />
                             <p></p>
@@ -60,7 +60,7 @@ function ContactUS() {
                         </div>
                     </div>
 
-                    <div className="col-sm-6 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-sm-6 col-md-3 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div className="p-4 mb-3 contact-card">
                             <img src={poto3} alt="lakitha" className="img" />
                             <p></p>

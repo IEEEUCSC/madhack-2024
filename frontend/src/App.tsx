@@ -36,7 +36,7 @@ const App = () => {
             <Hero/>
             <Intro/>
             <Timeline/>
-            <Prizes/>
+            {/*<Prizes/>*/}
             <Faq/>
             <ContactUS/>
         </div>

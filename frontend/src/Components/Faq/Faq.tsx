@@ -24,7 +24,7 @@ const data = {
         },
         {
             title: "Do I need a team to participate?",
-            content:"Yes, for the Initial Round and the Final Hackathon, participants are encouraged to form teams of four members each.",
+            content:"Yes, for the Initial Round and the Final Hackathon, participants are required to form teams of three or four members each.",
         },
         {
             title: "What if I'm a beginner in coding? Can I still participate?",

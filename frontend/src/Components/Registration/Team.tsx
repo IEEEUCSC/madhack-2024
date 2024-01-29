@@ -75,11 +75,11 @@ if (teamMemberCount === 2) {
             <div className="container">
                 <h1 className='py-2'> Register for the MADHACK 3.0 hackathon</h1>
 
-                <h4> Remaining slots :  <span 
+                {/* <h4> Remaining slots :  <span 
                 // background green and red if slots less than 10, use bootstrap classes
                 className={slotsRemaining < 10 ? "slots-remaining-red" : "slots-remaining-green "}>
                     {slotsRemaining}
-                </span></h4>
+                </span></h4> */}
 
                 <div className="row">
                     <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">

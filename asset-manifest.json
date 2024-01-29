@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.26cf130c.css",
-    "main.js": "/static/js/main.6dfc0781.js",
+    "main.css": "/static/css/main.4c390daa.css",
+    "main.js": "/static/js/main.9a3dc375.js",
     "static/js/638.e392a388.chunk.js": "/static/js/638.e392a388.chunk.js",
     "static/media/Noji.png": "/static/media/Noji.807f106e910a8bc6d222.png",
     "static/media/lakitha.png": "/static/media/lakitha.5448db06edd08f434062.png",
@@ -10,9 +10,6 @@
     "static/media/logo.png": "/static/media/logo.d6b2c1523f3dae13f1bd.png",
     "static/media/presents.png": "/static/media/presents.517db039712e11500218.png",
     "static/media/flutter_react.png": "/static/media/flutter_react.352a186d9b92d4f0db07.png",
-    "static/media/2.png": "/static/media/2.77ab750a1741046710e1.png",
-    "static/media/3.png": "/static/media/3.79d47d0340ba066bd0fd.png",
-    "static/media/1.png": "/static/media/1.d2d9d01c450deb46e6cf.png",
     "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
     "static/media/Aquire-BW0ox.otf": "/static/media/Aquire-BW0ox.a37a828dd20a35dc68d2.otf",
     "static/media/AquireBold-8Ma60.otf": "/static/media/AquireBold-8Ma60.cfc5ce07bacb3e5972c3.otf",
@@ -28,12 +25,12 @@
     "static/media/ibm-plex-mono-cyrillic-ext-400-normal.woff": "/static/media/ibm-plex-mono-cyrillic-ext-400-normal.18dd695e5b1103c22279.woff",
     "static/media/ibm-plex-mono-vietnamese-400-normal.woff": "/static/media/ibm-plex-mono-vietnamese-400-normal.442fb799b2a313edbc10.woff",
     "index.html": "/index.html",
-    "main.26cf130c.css.map": "/static/css/main.26cf130c.css.map",
-    "main.6dfc0781.js.map": "/static/js/main.6dfc0781.js.map",
+    "main.4c390daa.css.map": "/static/css/main.4c390daa.css.map",
+    "main.9a3dc375.js.map": "/static/js/main.9a3dc375.js.map",
     "638.e392a388.chunk.js.map": "/static/js/638.e392a388.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26cf130c.css",
-    "static/js/main.6dfc0781.js"
+    "static/css/main.4c390daa.css",
+    "static/js/main.9a3dc375.js"
   ]
 }

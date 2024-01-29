@@ -72,14 +72,41 @@ if (teamMemberCount === 2) {
 
     return (
         <div className="site-section local-bootstrap reg-section">
+
             <div className="container">
+                {/* Link for Delegate book */}
+               
+
+                
+                </div>
+            <div className="container">
+
+
+
                 <h1 className='py-2'> Register for the MADHACK 3.0 hackathon</h1>
 
-                <h4> Remaining slots :  <span 
+
+                <div className="row py-4  justify-content-center">
+                    <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">
+                        <div className="row form-group">
+
+                            {/* display flex */}
+                            <div className="col-md-12 justify-content-center  
+                            d-flex flex-column align-items-center">
+                                <a href="MADHACK 3.0.pdf" target="_blank">
+                                    <button className="btn btn-primary py-2 px-4 text-white">
+                                        Delegate Book
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                {/* <h4> Remaining slots :  <span 
                 // background green and red if slots less than 10, use bootstrap classes
                 className={slotsRemaining < 10 ? "slots-remaining-red" : "slots-remaining-green "}>
                     {slotsRemaining}
-                </span></h4>
+                </span></h4> */}
 
                 <div className="row">
                     <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">

@@ -29,19 +29,19 @@ function Prizes() {
                           <div className="prize">
                               <img className='prize-image' src={img1} alt="Prize 1" />
                               <h2>Silver</h2>
-                              <p>RS. </p>
+                              <p>RS. 40,000 </p>
 
                           </div>
                           <div className="prize">
                               <img className='prize-image' src={img2} alt="Prize 1" />
                               <h2>Gold</h2>
-                              <p>RS. </p>
+                              <p>RS.60,000 </p>
 
                           </div>
                           <div className="prize">
                               <img className='prize-image' src={img3} alt="Prize 1" />
                               <h2>Bronze</h2>
-                              <p>RS. </p>
+                              <p>RS.20,000 </p>
 
                           </div>
                       </div>

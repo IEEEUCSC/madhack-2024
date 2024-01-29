@@ -2,7 +2,7 @@ import Team from "../Model/team";
 import{  Request, Response } from "express";
 
 
-const expectTeamCount = 0;
+const expectTeamCount = 50;
 
 const teamCount = async (): Promise<number> => { 
   try {

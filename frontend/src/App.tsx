@@ -23,13 +23,18 @@ import Intro from "./Components/Introduction/Intro";
 import ContactUS from "./Components/ContactUs/ContactUs";
 
 
+import Teams from './Components/Admin/Teams'
+
+
 const App = () => {
     return (
         <div className="app-container">
             <NavBar/>
             <Routes>
-    <Route path="/register" element={<Registration/>} />
+    {/* <Route path="/register" element={<Registration/>} /> */}
     <Route path="/team" element={<TeamRegistration/>} />
+
+    <Route path="/admin/teams/:key" element={<Teams/>} />
 
     <Route path="/*" element={
         <div>

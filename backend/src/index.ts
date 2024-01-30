@@ -10,6 +10,8 @@ const URL = process.env.MONGO || "mongodb://localhost:27017/";
 const ORIGIN = process.env.ORIGIN || "http://localhost:3000";
 const PORT = process.env.PORT || 4000;
 
+const AUTH_KEY = process.env.AUTH_KEY || "123456";
+
 const app: Express = express();
 app.use(express.json());
 app.use(cors(

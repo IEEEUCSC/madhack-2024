@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.26cf130c.css",
-    "main.js": "/static/js/main.a5d64ee3.js",
+    "main.css": "/static/css/main.f76b52f9.css",
+    "main.js": "/static/js/main.82085276.js",
     "static/js/638.e392a388.chunk.js": "/static/js/638.e392a388.chunk.js",
     "static/media/Noji.png": "/static/media/Noji.807f106e910a8bc6d222.png",
     "static/media/lakitha.png": "/static/media/lakitha.5448db06edd08f434062.png",
@@ -28,12 +28,12 @@
     "static/media/ibm-plex-mono-cyrillic-ext-400-normal.woff": "/static/media/ibm-plex-mono-cyrillic-ext-400-normal.18dd695e5b1103c22279.woff",
     "static/media/ibm-plex-mono-vietnamese-400-normal.woff": "/static/media/ibm-plex-mono-vietnamese-400-normal.442fb799b2a313edbc10.woff",
     "index.html": "/index.html",
-    "main.26cf130c.css.map": "/static/css/main.26cf130c.css.map",
-    "main.a5d64ee3.js.map": "/static/js/main.a5d64ee3.js.map",
+    "main.f76b52f9.css.map": "/static/css/main.f76b52f9.css.map",
+    "main.82085276.js.map": "/static/js/main.82085276.js.map",
     "638.e392a388.chunk.js.map": "/static/js/638.e392a388.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26cf130c.css",
-    "static/js/main.a5d64ee3.js"
+    "static/css/main.f76b52f9.css",
+    "static/js/main.82085276.js"
   ]
 }

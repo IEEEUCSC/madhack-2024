@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import './Registration.scss';
 import { Network, ResponseModel } from "../../Network";
 
+
 export default function Registration() {
     const { register, handleSubmit,watch, formState: { errors }, reset } = useForm();
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -98,6 +99,14 @@ if (teamMemberCount === 2) {
                                         Delegate Book
                                     </button>
                                 </a>
+                                <div>
+                                    <br></br>
+                                </div>
+                                {/* <a  target="_blank">
+                                    <button className="btn btn-primary py-2 px-4 text-red">
+                                        Registration close
+                                    </button>
+                                </a> */}
                             </div>
                         </div>
                     </div>

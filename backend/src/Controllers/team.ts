@@ -1,5 +1,11 @@
 import Team from "../Model/team";
 import{  Request, Response } from "express";
+import dotenv from "dotenv";
+
+
+dotenv.config();
+
+const AUTH_KEY = process.env.AUTH_KEY || "";
 
 
 const expectTeamCount = 50;
@@ -95,6 +101,35 @@ export const count = (req: Request, res: Response): void => {
     console.error('Error counting teams:', err);
     res.status(500).send('Error counting teams');
   });
+};
+
+
+
+// get teams , autherization key is required
+
+export const getTeams = async (req: Request, res: Response) => {
+  const authKey = req.headers.authorization;
+  if (authKey !== AUTH_KEY) {
+    res.status(401).json({
+      success: false,
+      message: "Unauthorized",
+    });
+    return;
+  }
+  try {
+    const teams = await Team.find({});
+    res.status(200).json({
+      success: true,
+      message: "Teams fetched successfully",
+      data: teams,
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "Error fetching teams",
+      data: err,
+    });
+  }
 };
 
 

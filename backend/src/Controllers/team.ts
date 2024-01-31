@@ -8,7 +8,7 @@ dotenv.config();
 const AUTH_KEY = process.env.AUTH_KEY || "";
 
 
-const expectTeamCount = 60;
+const expectTeamCount = 65;
 
 const teamCount = async (): Promise<number> => { 
   try {

@@ -102,11 +102,11 @@ if (teamMemberCount === 2) {
                                 <div>
                                     <br></br>
                                 </div>
-                                {/* <a  target="_blank">
+                                <a  target="_blank">
                                     <button className="btn btn-primary py-2 px-4 text-red">
                                         Registration close
                                     </button>
-                                </a> */}
+                                </a>
                             </div>
                         </div>
                     </div>

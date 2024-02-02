@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useForm, useFormState } from 'react-hook-form';
 import Swal from 'sweetalert2';
-import './Registration.scss';
+// import './Registration.scss';
 import { Network, ResponseModel } from "../../Network";
 
 
@@ -107,7 +107,7 @@ if (teamMemberCount === 2) {
                                         Registration close
                                     </button>
                                 </a>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                     </div>

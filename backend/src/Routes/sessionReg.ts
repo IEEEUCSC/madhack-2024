@@ -3,6 +3,6 @@ import { register } from "../Controllers/sessionReg";
 
 const router = express.Router();
 
-router.post("/", register);
+router.post("/session", register);
 
 export default router;

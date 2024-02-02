@@ -68,7 +68,7 @@ const Timeline: React.FC = () => {
       date: "Feb 4th",
       event: "Workshop - Flutter Session - Basics",
       description: "",
-      state: "Onsite"
+      state: "Virtual"
     },
     {
       date: "Feb 5th",
@@ -80,7 +80,7 @@ const Timeline: React.FC = () => {
       date: "Feb 11th",
       event: "Workshop - Flutter Session - Advanced",
       description: "",
-      state: "Onsite"
+      state: "Virtual"
     },
     {
       date: "Feb 13th",

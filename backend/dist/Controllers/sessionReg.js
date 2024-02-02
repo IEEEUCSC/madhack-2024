@@ -23,6 +23,8 @@ const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             number: req.body.number,
             university: req.body.university,
             year: req.body.year,
+            platform: req.body.platform,
+            design: req.body.design,
         });
         yield newSession.save();
         res.status(200).json({

@@ -31,8 +31,8 @@ const App = () => {
         <div className="app-container">
             <NavBar/>
             <Routes>
-    {/* <Route path="/register" element={<Registration/>} /> */}
-    <Route path="/team" element={<TeamRegistration/>} />
+    <Route path="/register" element={<Registration/>} />
+    {/* <Route path="/team" element={<TeamRegistration/>} /> */}
 
     <Route path="/admin/teams/:key" element={<Teams/>} />
 

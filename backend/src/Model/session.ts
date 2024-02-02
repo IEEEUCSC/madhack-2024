@@ -42,4 +42,4 @@ const sessionSchema = new mongoose.Schema({
 //     year: string;
 // }
 
-export default mongoose.model('AppDesginSession', sessionSchema);
+export default mongoose.model('workshop2', sessionSchema);

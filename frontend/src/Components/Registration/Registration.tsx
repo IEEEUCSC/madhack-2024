@@ -15,7 +15,7 @@ export default function Registration() {
     const onSubmit = async (data: any) => {
         try{
         setIsSubmitting(true)
-        let response: ResponseModel = await Network.shared.register(data)
+        let response: ResponseModel = await Network.shared.Sessionregister(data)
         // alert(response.message)
         // use site styles
         Swal.fire({

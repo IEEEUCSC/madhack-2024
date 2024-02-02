@@ -16,13 +16,17 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const team_1 = __importDefault(require("./Routes/team"));
 const sessionReg_1 = __importDefault(require("./Routes/sessionReg"));
 dotenv_1.default.config();
-const URL = process.env.MONGO || "";
+const URL = process.env.MONGO || "mongodb://localhost:27017/";
+const ORIGIN = process.env.ORIGIN || "http://localhost:3000";
+const PORT = process.env.PORT || 4000;
+const AUTH_KEY = process.env.AUTH_KEY || "123456";
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: "http://localhost:3000",
+    origin: ORIGIN,
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 // app.post("/api/register", (req: Request, res: Response) => {
@@ -33,7 +37,12 @@ app.use((0, cors_1.default)({
 //     console.log(response);
 //     res.send(response);
 // });
-app.use("/api/register", sessionReg_1.default);
+// Api is running
+app.get("/", (req, res) => {
+    res.send("MADHACK API is running");
+});
+app.use("/api/team", team_1.default);
+app.use("/api/session", sessionReg_1.default);
 const connect = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield mongoose_1.default.connect(URL);
@@ -46,7 +55,7 @@ const connect = () => __awaiter(void 0, void 0, void 0, function* () {
 mongoose_1.default.connection.on("disconnected", () => {
     console.log("mongoDB disconnected!");
 });
-app.listen(4011, () => {
+app.listen(PORT, () => {
     connect();
-    console.log("Server running on port 4011");
+    console.log("Server running on port " + PORT);
 });

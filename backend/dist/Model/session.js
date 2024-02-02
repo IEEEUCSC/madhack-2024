@@ -24,7 +24,15 @@ const sessionSchema = new mongoose_1.default.Schema({
     year: {
         type: String,
         required: true
-    }
+    },
+    platform: {
+        type: String,
+        required: true
+    },
+    design: {
+        type: String,
+        required: true
+    },
 });
 // interface ISession extends Document {
 //     email: string;
@@ -33,4 +41,4 @@ const sessionSchema = new mongoose_1.default.Schema({
 //     university: string;
 //     year: string;
 // }
-exports.default = mongoose_1.default.model('Session', sessionSchema);
+exports.default = mongoose_1.default.model('AppDesginSession', sessionSchema);

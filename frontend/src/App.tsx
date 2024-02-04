@@ -24,6 +24,7 @@ import ContactUS from "./Components/ContactUs/ContactUs";
 
 
 import Teams from './Components/Admin/Teams'
+import Partners from "./Components/Partners/Partners";
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
             <Intro/>
             <Timeline/>
             <Prizes/>
+            <Partners/>
             <Faq/>
             <ContactUS/>
         </div>

@@ -6,6 +6,12 @@
   cursor: pointer;
   text-decoration: none;
   color: white;
+
+  // on mobile
+    @media (max-width: 768px) {
+        width: 100%;
+      margin-top: 20px;
+    }
 }
 
 .partner img {

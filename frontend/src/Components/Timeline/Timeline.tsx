@@ -71,7 +71,7 @@ const Timeline: React.FC = () => {
       state: "Virtual"
     },
     {
-      date: "Feb 5th",
+      date: "Feb 7th",
       event: "Open Initial Round Submissions",
       description: "",
       state: ""

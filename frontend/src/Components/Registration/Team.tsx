@@ -57,6 +57,8 @@ if (teamMemberCount === 2) {
         }
     };
 
+    // <form onSubmit={handleSubmit(onSubmit)} className={slotsRemaining <= 0 ? "disable-form" : "form"}></form>
+    // disabled={isSubmitting || slotsRemaining <= 0}
 
     // get team count Network.shared.getTeamCount()
     useEffect(() => {

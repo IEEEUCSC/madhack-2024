@@ -25,6 +25,7 @@ import ContactUS from "./Components/ContactUs/ContactUs";
 
 import Teams from './Components/Admin/Teams'
 import Partners from "./Components/Partners/Partners";
+import Task from "./Components/Task/Task.";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
             <NavBar/>
             <Routes>
     <Route path="/register" element={<Registration/>} />
+    <Route path="/task" element={<Task/>} />
     {/* <Route path="/team" element={<TeamRegistration/>} /> */}
 
     <Route path="/admin/teams/:key" element={<Teams/>} />

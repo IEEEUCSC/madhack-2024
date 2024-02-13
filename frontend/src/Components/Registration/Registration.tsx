@@ -45,7 +45,7 @@ export default function Registration() {
         <div className="site-section local-bootstrap reg-section">
 
             <div className="container">
-                <h1 className='py-2'> Register for Workshop 2 - Introduction to Flutter </h1>
+                <h1 className='py-2'> Register for Workshop 3 - Journey to Flutter Mastery </h1>
 
 
                 <div className="row">

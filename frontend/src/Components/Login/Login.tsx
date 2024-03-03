@@ -54,9 +54,9 @@ export default function Login() {
 
                             <div className="row form-group">
                                 <div className="col-md-12">
-                                    <label htmlFor="teamname">Team Name</label>
-                                    <input type="text" id="teamname" className="form-control"
-                                           {...register("teamname", {required: true})}/>
+                                    <label htmlFor="leaderEmail">Team Leader Email</label>
+                                    <input type="text" id="leaderEmail" className="form-control"
+                                           {...register("leaderEmail", {required: true})}/>
                                 </div>
                             </div>
 

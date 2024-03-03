@@ -66,7 +66,7 @@ function NavBar() {
                                   <li className={activeSection === 'prizes' ? 'active' : ''}><a href="/#prizes">Prizes</a></li>          {/*// */ }
                                   <li className={activeSection === 'faq' ? 'active' : ''}><a href="/#faq">Faq</a></li>
                                   <li className={activeSection === 'contact' ? 'active' : ''}><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
-                                  <li><HashLink className="cta" to="/register">Register Now</HashLink></li>
+                                  <li><HashLink className="cta" to="/task">Task</HashLink></li>
                                   {/* <li><HashLink className="cta" to="/team">Register Now</HashLink></li> */}
                               </ul>
                           </nav>

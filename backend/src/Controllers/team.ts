@@ -109,16 +109,11 @@ export const count = (req: Request, res: Response): void => {
 
 export const authorizeLogin = async (req: Request, res: Response) => {
   try {
-    let teams = await Team.find({teamName: req.body.teamname});
-    if (teams.length == 0) {
-      teams = await Team.find({teamName: req.body.teamname + " "}); // some team names have a space at the end
-    }
-    console.log((req.body))
-    console.log(teams)
+    let teams = await Team.find({leaderEmail: req.body.leaderEmail});
     if (teams.length === 0) {
         res.status(200).json({
             success: false,
-            message: "Team not found",
+            message: "Email not found",
         });
         return;
     } else {
@@ -138,6 +133,7 @@ export const authorizeLogin = async (req: Request, res: Response) => {
       return;
     }
   } catch (err) {
+    console.error(err)
     res.status(500).json({
       success: false,
       message: "Error fetching teams",

@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import sessionRegRoute from "./Routes/sessionReg";
 import teamRoute from "./Routes/team";
 import sessionRoute from "./Routes/sessionReg";
+import taskRoute from "./Routes/taskLogin"
 dotenv.config();
 
 const URL = process.env.MONGO || "mongodb://localhost:27017/";
@@ -39,6 +40,7 @@ app.get("/", (req: Request, res: Response) => {
 
 app.use("/api/team", teamRoute);
 app.use("/api/session", sessionRoute);
+app.use("/api/task", taskRoute);
 
 
 const connect = async () => {

@@ -107,6 +107,49 @@ export const count = (req: Request, res: Response): void => {
 
 // get teams , autherization key is required
 
+export const authorizeLogin = async (req: Request, res: Response) => {
+  const authKey = req.headers.authorization;
+  if (authKey !== AUTH_KEY) {
+    res.status(401).json({
+      success: false,
+      message: "Unauthorized",
+    });
+    return;
+  }
+  try {
+    const teams = await Team.find({teamName: req.params.teamName});
+    if (teams.length === 0) {
+        res.status(200).json({
+            success: false,
+            message: "Team not found",
+        });
+        return;
+    } else {
+      for (let team of teams) {
+        if ((await team).leaderNIC === req.params.nic || (await team).member1NIC === req.params.nic || (await team).member2NIC === req.params.nic || (await team).member3NIC === req.params.nic) {
+          res.status(200).json({
+            success: true,
+            message: "",
+            data: team,
+          });
+          return;
+        }
+      }
+      res.status(200).json({
+        success: false,
+        message: "Invalid NIC. Please use the NIC of any member of the team.",
+      });
+      return;
+    }
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "Error fetching teams",
+      data: err,
+    });
+  }
+}
+
 export const getTeams = async (req: Request, res: Response) => {
   const authKey = req.headers.authorization;
   if (authKey !== AUTH_KEY) {

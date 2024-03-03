@@ -17,6 +17,19 @@ export default function Task() {
     return (
         <div className="site-section task-section">
 
+            <h1>Initial Round Task</h1>
+
+            <p>
+                In a bustling city, a professional is on the lookout for opportunities. They discover a job searching app that connects candidates with employers. Meanwhile, a tech firm urgently needs a software developer.
+
+                The app notifies the professional about the job opening, and they apply seamlessly. The hiring manager receives their application and schedules an interview directly through the app.
+
+                Efficient and streamlined, the app revolutionizes the job search process, making it easier for both candidates and employers to connect and interact.
+
+
+                As the task of MADHack 3.0 create a cutting-edge  job searching app. Choose a catchy name, design a captivating logo, and build the app with essential functionalities for professionals and companies. Let the innovation begin!
+            </p>
+
             <h1>Judging Criteria</h1>
             <ul>
                 <li>UI/UX - 20%</li>

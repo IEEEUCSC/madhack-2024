@@ -2,7 +2,6 @@ import express,{ Express , Request, Response} from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import sessionRegRoute from "./Routes/sessionReg";
 import teamRoute from "./Routes/team";
 import sessionRoute from "./Routes/sessionReg";
 import taskRoute from "./Routes/taskLogin"

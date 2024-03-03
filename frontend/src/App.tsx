@@ -15,17 +15,13 @@ import Prizes from './Components/Prizes/Prizes';
 import Faq from './Components/Faq/Faq';
 import Footer from './Components/Footer/Footer';
 
-
-import Registration from './Components/Registration/Registration'
-import TeamRegistration from './Components/Registration/Team'
-
 import Intro from "./Components/Introduction/Intro";
 import ContactUS from "./Components/ContactUs/ContactUs";
 
 
 import Teams from './Components/Admin/Teams'
 import Partners from "./Components/Partners/Partners";
-import Task from "./Components/Task/Task.";
+import Login from "./Components/Login/Login";
 
 
 const App = () => {
@@ -33,24 +29,22 @@ const App = () => {
         <div className="app-container">
             <NavBar/>
             <Routes>
-    <Route path="/register" element={<Registration/>} />
-    <Route path="/task" element={<Task/>} />
-    {/* <Route path="/team" element={<TeamRegistration/>} /> */}
+                <Route path="/task" element={<Login/>} />
 
-    <Route path="/admin/teams/:key" element={<Teams/>} />
+                <Route path="/admin/teams/:key" element={<Teams/>} />
 
-    <Route path="/*" element={
-        <div>
-            <Hero/>
-            <Intro/>
-            <Timeline/>
-            <Prizes/>
-            <Partners/>
-            <Faq/>
-            <ContactUS/>
-        </div>
-    }/>
-</Routes>
+                <Route path="/*" element={
+                    <div>
+                        <Hero/>
+                        <Intro/>
+                        <Timeline/>
+                        <Prizes/>
+                        <Partners/>
+                        <Faq/>
+                        <ContactUS/>
+                    </div>
+                }/>
+            </Routes>
             <Footer/>
         </div>
     );

@@ -43,7 +43,7 @@ function NavBar() {
                       <li><HashLink onClick={hideNavBar} smooth to="/#prizes">Prizes</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#faq">Faq</HashLink></li>
                       <li><HashLink onClick={hideNavBar} smooth to="/#contact">Contact Us</HashLink></li>
-                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/register">Register Now</HashLink></li>
+                      <li><HashLink onClick={hideNavBar} smooth className="cta" to="/task">Task</HashLink></li>
                   </ul>
               </div>
           </div>

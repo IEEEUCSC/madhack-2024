@@ -137,7 +137,7 @@ export default function Task() {
                 <div className="grid-item">
                     <h3>3. Candidate Management</h3>
                     <p> Provide tools for employers to manage job applications, including viewing applicant profiles, shortlisting candidates, and scheduling interviews.
-                        .</p>
+                    </p>
                 </div>
             </div>
             <h3>

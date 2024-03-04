@@ -34,7 +34,7 @@ export default function Task() {
             <ul>
                 <li>UI/UX - 20%</li>
                 <li>Functionality - 70%</li>
-                <li>Code quality/Architecture - 20%</li>
+                <li>Code quality/Architecture - 10%</li>
             </ul>
 
             <h1>Functionalities</h1>

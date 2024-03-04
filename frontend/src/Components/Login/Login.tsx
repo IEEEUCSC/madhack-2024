@@ -5,7 +5,50 @@ import './Login.scss';
 import {Network, ResponseModel} from "../../Network";
 import Swal from "sweetalert2";
 import Task from "../Task/Task.";
+import {useEffect} from "react"
 
+function Countdown() {
+    type TimeLeft = {
+        days?: number;
+        hours?: number;
+        minutes?: number;
+        seconds?: number;
+    };
+
+    const calculateTimeLeft = (): TimeLeft => {
+        const difference = +new Date("2024-03-14T23:59") - +new Date();
+        let timeLeft = {};
+
+        if (difference > 0) {
+            timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+            };
+        }
+
+        return timeLeft;
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    });
+
+    return (
+        <div className="countdown">
+            <span>Time Left to Submit: </span>
+            <br className="mobile-break" />
+            <span className={"timer"}>{timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s</span>
+        </div>
+    );
+}
 
 export default function Login() {
 
@@ -62,7 +105,7 @@ export default function Login() {
 
                             <div className="row form-group">
                                 <div className="col-md-12">
-                                    <label htmlFor="nic">NIC</label>
+                                    <label htmlFor="nic">NIC (Of any member)</label>
                                     <input type="text" id="nic" className="form-control"
                                            {...register("nic", {required: true})}/>
                                 </div>
@@ -79,6 +122,8 @@ export default function Login() {
                         </form>
                     </div>
                 </div>
+
+                <Countdown />
             </div>
         </div>
     );

@@ -85,3 +85,34 @@
   font-weight: bold;
   pointer-events: none;
 }
+
+.reg-section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.countdown {
+  font-size: 1.5em;
+  text-align: center;
+  color: #7589b0;
+
+  .timer {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
+}

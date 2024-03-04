@@ -62,7 +62,7 @@ export default function Task() {
                 </div>
                 <div className="grid-item">
                     <h3>3. Job Search</h3>
-                    <p> Implement a search feature allowing users to find relevant job listings based on various criteria such as job title, location, industry, and salary range.</p>
+                    <p> To implement a search feature allowing users to find relevant job listings based on various criteria such as job title, location, industry, and salary range, and to also implement a feature where applicants can save job openings for later, which will enhance the user experience by allowing users to easily bookmark job listings they are interested in for future reference.</p>
                 </div>
 
                 <div className="grid-item">

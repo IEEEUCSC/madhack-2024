@@ -159,9 +159,8 @@ export default function Task() {
 
             <hr/>
 
-            <h1>Important Links</h1>
+            <h1>Important Link</h1>
             <ul>
-                <li><a href={"https://www.figma.com/file/jbhYwSaClYcn7W5IyGjXZC/MADHACK-3.0?type=design&node-id=1116%3A2&mode=design&t=mwVP3g3FmUhFvlPL-1"}>Figma Prototype</a></li>
                 <li><a href={"https://github.com/IEEEUCSC/madhack-2024-initial-api"}>REST API </a> (Not mandatory but recommended to use to save time.)</li>
             </ul>
         </div>

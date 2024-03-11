@@ -71,37 +71,37 @@ const Timeline: React.FC = () => {
       state: "Virtual"
     },
     {
-      date: "Feb 7th",
-      event: "Open Initial Round Submissions",
-      description: "",
-      state: ""
-    },
-    {
-      date: "Feb 11th",
+      date: "Feb 18th",
       event: "Workshop - Flutter Session - Advanced",
       description: "",
       state: "Virtual"
     },
     {
-      date: "Feb 13th",
+      date: "March 4th",
+      event: "Open Initial Round Submissions",
+      description: "",
+      state: ""
+    },
+    {
+      date: "March 16th",
       event: "Close Initial Round Submissions",
       description: "",
       state: ""
     },
     {
-      date: "Feb 19th",
+      date: "Postponed",
       event: "Announcement of Finalists",
       description: "",
       state: "Virtual"
     },
     {
-      date: "Feb 24th",
+      date: "Postponed",
       event: "Final Hackathon",
       description: "",
       state: "Onsite"
     },
     {
-      date: "Feb 25th",
+      date: "Postponed",
       event: "Final Hackathon & Award Ceremony",
       description: "",
       state: "Onsite"

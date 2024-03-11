@@ -16,7 +16,7 @@ function Countdown() {
     };
 
     const calculateTimeLeft = (): TimeLeft => {
-        const difference = +new Date("2024-03-14T23:59") - +new Date();
+        const difference = +new Date("2024-03-16T23:59") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {

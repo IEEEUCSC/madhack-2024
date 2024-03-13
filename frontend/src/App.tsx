@@ -22,6 +22,7 @@ import ContactUS from "./Components/ContactUs/ContactUs";
 import Teams from './Components/Admin/Teams'
 import Partners from "./Components/Partners/Partners";
 import Login from "./Components/Login/Login";
+import Submission from "./Components/Submission/Submission";
 
 
 const App = () => {
@@ -32,6 +33,8 @@ const App = () => {
                 <Route path="/task" element={<Login/>} />
 
                 <Route path="/admin/teams/:key" element={<Teams/>} />
+
+                <Route path="/task/submit" element={<Submission/>} />
 
                 <Route path="/*" element={
                     <div>

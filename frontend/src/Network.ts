@@ -10,6 +10,10 @@ export class Network {
 
     }
 
+    public submit(data: any): Promise<ResponseModel> {
+        return this.sendRequest( process.env.REACT_APP_BACKEND_URL  + '/api/task/submit', 'POST', JSON.stringify(data));
+    }
+
     public Sessionregister(data: any): Promise<ResponseModel> {
         // return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
         // get the url from the .env file

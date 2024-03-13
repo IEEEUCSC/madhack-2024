@@ -1,6 +1,7 @@
 import Team from "../Model/team";
 import{  Request, Response } from "express";
 import dotenv from "dotenv";
+import Submission from "../Model/submission";
 
 
 dotenv.config();
@@ -106,6 +107,31 @@ export const count = (req: Request, res: Response): void => {
 
 
 // get teams , autherization key is required
+
+export const submit = async (req: Request, res: Response) => {
+  try {
+    const newSubmission = new Submission({
+      teamName: req.body.teamName,
+      teamLeaderEmail: req.body.teamLeaderEmail,
+      githubRepo: req.body.githubRepo,
+      driveLink: req.body.driveLink,
+    });
+    await newSubmission.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Submitted successfully",
+    });
+
+  } catch (err) {
+    console.error(err)
+    res.status(500).json({
+      success: false,
+      message: "Submission failed",
+      data: err,
+    });
+  }
+}
 
 export const authorizeLogin = async (req: Request, res: Response) => {
   try {

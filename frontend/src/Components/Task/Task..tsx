@@ -10,6 +10,7 @@ import signin from '../../assets/Task/signin.png'
 import emp_dash from '../../assets/Task/emp_dash.png'
 import emp_job from '../../assets/Task/emp_job.png'
 import emp_reg from '../../assets/Task/emp_reg.png'
+import {HashLink} from "react-router-hash-link";
 
 
 export default function Task() {
@@ -158,6 +159,9 @@ export default function Task() {
             </ol>
 
             <hr/>
+
+            <h1><HashLink className="cta" to="/task/submit">Submit</HashLink></h1>
+
 
             <h1>Important Link</h1>
             <ul>

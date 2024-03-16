@@ -122,8 +122,6 @@ export default function Login() {
                         </form>
                     </div>
                 </div>
-
-                <Countdown />
             </div>
         </div>
     );

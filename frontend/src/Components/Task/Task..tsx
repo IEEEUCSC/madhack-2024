@@ -160,7 +160,7 @@ export default function Task() {
 
             <hr/>
 
-            <h1><HashLink className="cta" to="/task/submit">Submit</HashLink></h1>
+            {/*<h1><HashLink className="cta" to="/task/submit">Submit</HashLink></h1>*/}
 
 
             <h1>Important Link</h1>
